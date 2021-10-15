@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
                res.setText("random number in range " + range + "");
                re.setText(rand_no + " "); //display in textView
 
+               Toast.makeText(MainActivity.this, "Random Number Section", Toast.LENGTH_SHORT).show();
+
            }
         });
 
@@ -49,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
                     result.setText("Sum of first and second number is: " + sumof ); //display total number in textView
 
+                Toast.makeText(MainActivity.this, "Addition of Two Number Section", Toast.LENGTH_SHORT).show();
             }
 
         });
